@@ -32,7 +32,7 @@ const obj2 = {
 // const obj4 = Object.assign(obj1, obj2)
 
 
-console.log(obj1)
+// console.log(obj1)
 // assign method obj1 and obj 2 ko concatenate kar ke ek target obj me store kar deta hai 
 // yaha vo target object assign() method ke first paramter ko manta ai . agar aap nahi chahte ki aapka first obj ko alter kiya jaye to in that case ek {} laga dete i.e aise 
 // const obj4 = Object.assign({}, obj1,obj2)
@@ -42,5 +42,30 @@ console.log(obj1)
 // if we do not want to use the assign operator then we can again use the ... operator in js
 
 const obj4 = {...obj1 , ...obj2}
-console.log(obj4)
+// console.log(obj4)
 
+// Destructuring an Object / Array 
+
+let course = {
+    courseName : "JavaScript in Hindi",
+    courseInstructor : "hitesh",
+    price : 999
+}
+
+// This below is de-structuring
+// Ek pure structure se ek ek value ya to objectname.value kar ke nikal sakte
+// for the purpose of clean code we perform de-structuring
+
+
+// let {courseInstructor:ins,price} = course
+// console.log(price)
+// console.log(ins)
+
+
+// ------------------------------------------------------------------------------------
+
+
+// ye array me bhi hoti hai
+let arr = [1,8,9,7,84]
+let [first] = arr
+console.log(first)
